@@ -13,16 +13,29 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './login/register.component';
 import { LoginComponent } from './login/login.component';
 
+
+//temporal
+import { FormsModule } from '@angular/forms';
+//servicios
+import { ServiceModule } from './services/service.module';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,    
+    RegisterComponent
+     
   ],
   imports: [
     BrowserModule,    
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule,
+    BrowserAnimationsModule,
+   ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
